@@ -1523,7 +1523,7 @@ auart_console_setup(struct console *co, char *options)
 }
 
 static struct console auart_console = {
-	.name		= "ttySP",
+	.name		= "ttyAPP",
 	.write		= auart_console_write,
 	.device		= uart_console_device,
 	.setup		= auart_console_setup,
@@ -1535,8 +1535,8 @@ static struct console auart_console = {
 
 static struct uart_driver auart_driver = {
 	.owner		= THIS_MODULE,
-	.driver_name	= "ttySP",
-	.dev_name	= "ttySP",
+	.driver_name	= "ttyAPP",
+	.dev_name	= "ttyAPP",
 	.major		= 0,
 	.minor		= 0,
 	.nr		= MXS_AUART_PORTS,
