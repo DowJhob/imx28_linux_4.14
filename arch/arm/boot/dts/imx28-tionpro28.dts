@@ -32,19 +32,19 @@
 				status = "okay";
 				partition@0 {
                                         label = "bootloader";
-                                        reg = <0x00000000 0x001000000>;
+                                        reg = <0x00000000 0x00100000>;
                                 };
-                                partition@300000 {
+                                partition@100000 {
                                         label = "environment";
                                         reg = <0x00100000 0x00080000>;
                                 };
-                                partition@380000 {
+                                partition@180000 {
                                         label = "redundant-environment";
                                         reg = <0x00180000 0x00080000>;
                                 };
-                                partition@400000 {
+                                partition@200000 {
                                         label = "kernel";
-                                        reg = <0x00200000 0x00400000>;
+                                        reg = <0x00200000 0x00600000>;
                                 };
                                 partition@800000 {
                                         label = "fdt";
@@ -52,7 +52,7 @@
                                 };
                                 partition@880000 {
                                         label = "ramdisk";
-                                        reg = <0x00880000 0x00800000>;
+                                        reg = <0x00880000 0x00b80000>;
                                 };
                                 partition@1080000 {
                                         label = "rootfs";
